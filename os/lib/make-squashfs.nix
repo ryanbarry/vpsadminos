@@ -24,6 +24,6 @@ stdenv.mkDerivation {
       # Generate the squashfs image.
       mksquashfs nix-path-registration $(cat $closureInfo/store-paths) \
         ${lib.optionalString (secretsDir != null) secretsDir} \
-        $out -keep-as-directory -all-root -b 1048576 -comp zstd -Xcompression-level 3
+        $out -keep-as-directory -all-root -b 1048576 -comp zstd
     '';
 }
