@@ -159,6 +159,9 @@ echo "$RC_SERVICES" | while read svcname runlevel; do
 	rc-update add \$svcname \$runlevel
 done
 
+# Enable apk cache
+ln -sf ../../var/cache/apk /etc/apk/cache
+
 # vpsAdmin users need to be able to connect using generated password
 sed -i \
 	-e 's/^#*PasswordAuthentication .*/PasswordAuthentication yes/' \
