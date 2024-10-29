@@ -159,8 +159,7 @@ echo "$RC_SERVICES" | while read svcname runlevel; do
 	rc-update add \$svcname \$runlevel
 done
 
-# vpsAdmin doesn't set SSH key in new containers, so we must permit root login
-# using password...
+# vpsAdmin users need to be able to connect using generated password
 sed -i \
 	-e 's/^#*PasswordAuthentication .*/PasswordAuthentication yes/' \
 	-e 's/^#*PermitRootLogin .*/PermitRootLogin yes/' \
