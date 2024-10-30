@@ -163,6 +163,7 @@ in {
           boot.initrd.kernelModules = [
             "virtio" "virtio_pci" "virtio_net" "virtio_rng" "virtio_blk" "virtio_console"
           ];
+          boot.enableUnifiedCgroupHierarchy = true;
 
           networking.hostName = mkDefault "vpsadminos";
           networking.static.enable = mkDefault true;
