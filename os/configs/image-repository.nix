@@ -11,7 +11,7 @@
         "8" = { tags = [ "oldstable" ]; };
         "9" = { tags = [ "latest" "stable" ]; };
 
-        "10-kitten" = { tags = [ "kitten" ]; };
+        "10-kitten" = { tags = [ "10-kitten" "kitten" ]; };
       };
 
       alpine = {
