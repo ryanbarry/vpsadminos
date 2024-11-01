@@ -68,7 +68,7 @@ module OsCtld
       if ctrc.aborted? \
          || ctrc.reboot? \
          || (ct.ephemeral? && !ct.is_being_manipulated?) \
-         || (ctrc && ctrc.destroy_dataset_on_stop?)
+         || ctrc.destroy_dataset_on_stop?
         # The current thread is used to handle the console and has to exit.
         # Manipulation must happen from another thread.
         t = Thread.new { handle_ct_stop(ctrc) }
