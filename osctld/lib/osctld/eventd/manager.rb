@@ -87,6 +87,18 @@ module OsCtld
   #       new_name: net interface name when action is rename,
   #       veth: interface name on the host
   #     }
+  #
+  # === `:ct_exit`
+  # Sent when container exits from the inside on its own, e.g. when halt/reboot
+  # is run.
+  #
+  # Options:
+  #
+  #     {
+  #       pool: pool name,
+  #       id: container id,
+  #       exit_type: halt or reboot
+  #     }
   class Eventd::Manager
     def initialize
       @workers = []

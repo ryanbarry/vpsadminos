@@ -65,6 +65,16 @@ module OsCtld
         return
       end
 
+      # Send events about halt/reboot from the inside
+      if !ctrc.aborted? && !ct.is_being_manipulated?
+        Eventd.report(
+          :ct_exit,
+          pool: ct.pool.name,
+          id: ct.id,
+          exit_type: ctrc.reboot? ? 'reboot' : 'halt'
+        )
+      end
+
       if ctrc.aborted? \
          || ctrc.reboot? \
          || (ct.ephemeral? && !ct.is_being_manipulated?) \
