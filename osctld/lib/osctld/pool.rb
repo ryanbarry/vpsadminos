@@ -395,6 +395,10 @@ module OsCtld
       autostop_plan.wait
     end
 
+    def fulfil_autostart(ct)
+      autostart_plan.fulfil_start(ct)
+    end
+
     def request_reboot(ct)
       autostart_plan.request_reboot(ct)
     end

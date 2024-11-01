@@ -161,6 +161,10 @@ module OsCtld
       )
     end
 
+    def fulfil_start(ct)
+      state.set_started(ct)
+    end
+
     def request_reboot(ct)
       reboot.add(ct)
     end

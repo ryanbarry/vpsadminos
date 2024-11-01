@@ -14,6 +14,9 @@ module OsCtld
 
       ct.starting
 
+      # Mark autostart as fulfilled
+      ct.pool.fulfil_autostart(ct)
+
       # Fulfil possible reboot request
       ct.pool.fulfil_reboot(ct)
 
