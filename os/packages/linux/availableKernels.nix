@@ -17,8 +17,8 @@ let
       url = linuxGhUrl vpsfGh "fb63ad71c1e9811d576d5d89888ef0d371781c52";
       sha256 = "sha256-3Q6KCWBnG0P3LEqmQqvvgigcNO23bOoWIB9welrquUo=";
       zfs = {
-        rev = "b62f013132039884634fe536a948d2438a5fe30c";
-        sha256 = "sha256-kx8ohFkaJ+kvhDmj4sNWaq+zGCva+j3Il9OLpGn1zos=";
+        rev = "a719e13c7916337801487e74245f2a91f8c8e72a";
+        sha256 = "sha256-UO4QHk9zoj33R488fEEtc+8JQgJUUwucGacJA4miq2U=";
       };
     };
     "6.10.11" = {
