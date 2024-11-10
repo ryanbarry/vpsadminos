@@ -61,8 +61,8 @@
         "24.05" = { tags = [ "latest" "stable" ]; };
         "unstable" = { tags = [ "unstable" ]; };
 
-        "24.05-impermanence" = { tags = [ "latest-impermanence" "stable-impermanence" ]; };
-        "unstable-impermanence" = { tags = [ "unstable-impermanence" ]; };
+        "24.05-impermanence" = { tags = [ "latest" "stable" ]; };
+        "unstable-impermanence" = { tags = [ "unstable" ]; };
       };
 
       opensuse = {
