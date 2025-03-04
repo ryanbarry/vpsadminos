@@ -10,7 +10,7 @@ GEM
     ipaddress (0.8.3)
     json (2.7.5)
     prometheus-client (4.0.0)
-    rack (2.2.10)
+    rack (2.2.12)
     rainbow (3.1.1)
     require_all (2.0.0)
     ruby-progressbar (1.11.0)
